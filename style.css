@@ -1,0 +1,342 @@
+/* style.css */
+
+body {
+	background: #fc3;
+	color: black;
+}
+
+header {
+	margin: 30px 0;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+	border-style: solid;
+	border-bottom: 4px solid black;
+	border-top: 4px solid black;
+	border-left-style: none;
+	border-right-style: none;
+	
+}
+
+header nav#mainNav { 
+	display: inline;
+}
+
+header #mast img {
+    
+	margin: 4px 80px;
+}
+
+#mainNav #workAbout{
+	padding: 8px 84px;
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+	text-align: center;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	margin: 0;
+    line-height: 110%;
+    letter-spacing: -.7px;
+}
+
+#mainNav #workAbout a:link,
+#mainNav #workAbout a:visited{
+	box-sizing: border-box;
+	display: block;
+	width: 120px;
+	text-decoration: none;
+	color: black;
+	padding: 2px 5px;
+			
+}
+
+#mainNav #workAbout a:hover{
+	color: #555;		
+}
+
+#mainNav #workAbout a:active{
+    box-sizing: border-box;
+	border: 1px solid #555;
+	padding: 1px 5px;		
+}
+
+
+
+header nav#mainNav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+section {
+    margin: 40px auto;
+    background: url('img/LandingImg.png') center center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+section {
+    margin: 0;
+}
+
+section #container {
+    width: 630px;
+    margin: 60px auto 0;
+}
+
+
+
+p {
+  font-family: Courier, monospace;  
+}
+
+section #container>p {
+    font-size: 18px;
+    /*font-weight: bold;*/
+    font-style: italic;
+    padding: 54px 0 10px;
+}
+
+section #container #pair p {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    /*font-weight: bold;*/
+}
+
+section #container #pair{
+	width: 80%;
+	margin: 40px auto 0; 
+    
+}
+
+section #container #pair:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+section #container #pair #left{
+    float: left;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+section #container #pair #right{
+    float: left;
+    
+}
+
+section #container #pair h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+footer {
+    margin: 0;
+    
+}
+
+footer p {
+    position: fixed;
+    margin: 5px 20px;
+}
+
+footer #scroll {
+    width: 15px;
+    margin: 15px auto;
+
+}
+
+footer #scroll a:link
+footer #scroll a:visited {
+    margin: 0;
+}
+
+footer #scroll a:hover {
+	opacity: .55;
+}
+
+footer #scroll a:active {
+	position: relative;
+	top: 1px;
+}
+
+
+
+
+/*
+#box {
+	background: red;
+	height: 200px;
+	width: 200px;
+	margin: 40px auto;
+	padding: 50px;
+	box-sizing: border-box;
+	
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	
+}
+
+/* Colors 
+body#colors {
+	background: rgba(25,52,84,1);
+	color: white;
+}
+
+#colors #container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 40px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,.1);
+}
+
+#colors #box {
+	background: linear-gradient(rgba(255,255,255,.1),purple);
+/*	background: radial-gradient(blue, yellow, black, white); */
+}
+
+/* Shadows 
+
+#shadows #container {
+	width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #fc3;
+	box-shadow: 0 20px 10px -15px #333;
+}
+
+#shadows h1 {
+	color: white;
+	/* text-shadow: 3px 6px 3px blue, 4px 2px 8px red;  Groovy Awards! */
+	text-shadow: 0 2px 5px blue, 0 2px 10px red;
+}
+
+/* Columns 
+
+#three-columns {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	
+	-webkit-column-gap: 40px;
+	-moz-column-gap: 40px;
+	column-gap: 40px;
+	
+	-webkit-column-rule-style: solid;
+	-moz-column-rule-style: solid;
+	column-rule-style: solid;
+	
+	-webkit-column-rule-width: 1px;
+	-moz-column-rule-width: 1px;
+	column-rule-width: 1px;
+	
+	-webkit-column-rule-color: red;
+	-moz-column-rule-color: red;
+	column-rule-color: red;
+
+	-webkit-column-rule-style: dashed;
+	-moz-column-rule-style: dashed;	
+	column-rule-style: dashed;
+}
+
+/* Animations & Transitions 
+
+@keyframes box {
+	from { border-radius: 10px;
+		   background-color: red;
+		   left: 0;				
+	}
+	to   { border-radius: 100px;
+		   background-color: black; 
+		   left: 800px;
+	}
+}
+
+#animations #box {
+
+	position: relative;
+/*	animation-name: box;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 2s;
+	animation-iteration-count: 3;
+	animation-direction: alternate; 
+	animation: box 10s linear 2s 3 alternate;
+}
+
+#box2 {
+	background: blue;
+	width: 200px;
+	height: 200px;
+}
+
+#box2:hover {
+	background: red;
+	width: 300px;
+	height: 300px;
+	top: -20px;
+	left: 30px;
+	transition: width 8s, height 2s, background 20s;
+	
+}
+
+/* Buttons 
+
+@keyframes buttonAnimation {
+	from { padding: 10px 20px; font-size: inherit; }
+	to   { padding: 20px 30px; font-size: 24px; }
+}
+
+.button {
+	display: inline-block;
+	background: #fc3;
+	background: linear-gradient(#fc3, #f91);
+	border: solid 1px #999;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px;
+	margin: 10px;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.button:hover {
+	border-color: #888;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.9);	
+	background: #f91;	
+	background: linear-gradient(to top, #fc3, #f91);
+	animation-name: buttonAnimation;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.alt-button {
+	background: radial-gradient(#fc3, #f91);
+}
+
+.alt-button:hover {
+	background: radial-gradient(#f91, #fc3);
+}
+
+
+*/
+
+
